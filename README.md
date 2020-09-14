@@ -1,2 +1,2 @@
 # My-OOP-Projects-(Java)
-There are many codes about OOP (in Java Language). This codes from my OOP lecture. while i studied, i wrote this codes. 
+There are 51 projectsmabout OOP (in Java Language). This codes from my OOP lecture. While i studied, i wrote this codes. 
