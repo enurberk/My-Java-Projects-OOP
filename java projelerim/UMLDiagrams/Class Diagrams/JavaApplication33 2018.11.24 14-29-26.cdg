@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="JavaApplication33">
+  <ClassDiagramComponents>
+    <Class name="BasePlusCommissionEmployee" package="javaapplication33" visibility="publıc" xPosition="-73.0" yPosition="421.0">
+      <Fields>
+        <Field name="baseSalary" type="double" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="publıc">
+          <Argument type="String" name="name"/>
+          <Argument type="int" name="ssn"/>
+          <Argument type="double" name="grosSales"/>
+          <Argument type="double" name="commissionRate"/>
+          <Argument type="double" name="baseSalary"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="earnings" returnType="double" visibility="package"/>
+        <Method name="toString" returnType="String" visibility="publıc"/>
+      </Methods>
+    </Class>
+    <Class name="CommissionEmployee" package="javaapplication33" visibility="publıc" xPosition="9.0" yPosition="213.0">
+      <Fields>
+        <Field name="grosSales" type="double" visibility="package"/>
+        <Field name="commissionRate" type="double" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="publıc">
+          <Argument type="String" name="name"/>
+          <Argument type="int" name="ssn"/>
+          <Argument type="double" name="grosSales"/>
+          <Argument type="double" name="commissionRate"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="earnings" returnType="double" visibility="package"/>
+        <Method name="toString" returnType="String" visibility="publıc"/>
+      </Methods>
+    </Class>
+    <Class name="Employee" package="javaapplication33" visibility="publıc" isAbstract="true" xPosition="513.0" yPosition="-26.0">
+      <Fields>
+        <Field name="name" type="String" visibility="package"/>
+        <Field name="ssn" type="int" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="publıc">
+          <Argument type="String" name="name"/>
+          <Argument type="int" name="ssn"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="earnings" returnType="double" visibility="package" isAbstract="true"/>
+        <Method name="toString" returnType="String" visibility="publıc"/>
+      </Methods>
+    </Class>
+    <Class name="HourlyEmployee" package="javaapplication33" visibility="publıc" xPosition="572.0" yPosition="213.0">
+      <Fields>
+        <Field name="wage" type="double" visibility="package"/>
+        <Field name="hours" type="int" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="publıc">
+          <Argument type="String" name="name"/>
+          <Argument type="int" name="ssn"/>
+          <Argument type="double" name="wage"/>
+          <Argument type="int" name="hours"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="earnings" returnType="double" visibility="package"/>
+        <Method name="toString" returnType="String" visibility="publıc"/>
+      </Methods>
+    </Class>
+    <Class name="JavaApplication33" package="javaapplication33" visibility="publıc" xPosition="175.0" yPosition="10.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="publıc" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="SalariedEmployee" package="javaapplication33" visibility="publıc" xPosition="829.0" yPosition="10.0">
+      <Fields>
+        <Field name="weeklySalary" type="double" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="publıc">
+          <Argument type="String" name="name"/>
+          <Argument type="int" name="ssn"/>
+          <Argument type="double" name="weeklySalary"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="earnings" returnType="double" visibility="package"/>
+        <Method name="toString" returnType="String" visibility="publıc"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="javaapplication33.CommissionEmployee" target="javaapplication33.Employee"/>
+    <IsRelation name="is" source="javaapplication33.BasePlusCommissionEmployee" target="javaapplication33.CommissionEmployee"/>
+    <IsRelation name="is" source="javaapplication33.SalariedEmployee" target="javaapplication33.Employee"/>
+    <IsRelation name="is" source="javaapplication33.HourlyEmployee" target="javaapplication33.Employee"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

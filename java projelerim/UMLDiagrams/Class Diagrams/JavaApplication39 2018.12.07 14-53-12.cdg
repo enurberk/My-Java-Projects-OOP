@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="JavaApplication39">
+  <ClassDiagramComponents>
+    <Class name="Circle" package="javaapplication39" visibility="publıc" xPosition="-21.0" yPosition="102.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="publıc">
+          <Argument type="double" name="radius"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getArea" returnType="double" visibility="publıc"/>
+        <Method name="toString" returnType="String" visibility="publıc"/>
+      </Methods>
+    </Class>
+    <Class name="Cone" package="javaapplication39" visibility="publıc" xPosition="126.0" yPosition="733.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="publıc">
+          <Argument type="double" name="height"/>
+          <Argument type="double" name="radius"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getArea" returnType="double" visibility="publıc"/>
+        <Method name="getVolume" returnType="double" visibility="publıc"/>
+        <Method name="toString" returnType="String" visibility="publıc"/>
+      </Methods>
+    </Class>
+    <Class name="Cylinder" package="javaapplication39" visibility="publıc" xPosition="588.0" yPosition="733.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="publıc">
+          <Argument type="double" name="height"/>
+          <Argument type="double" name="radius"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getArea" returnType="double" visibility="publıc"/>
+        <Method name="getVolume" returnType="double" visibility="publıc"/>
+        <Method name="toString" returnType="String" visibility="publıc"/>
+      </Methods>
+    </Class>
+    <Class name="JavaApplication39" package="javaapplication39" visibility="publıc" xPosition="1692.0" yPosition="357.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="publıc" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Pyramid" package="javaapplication39" visibility="publıc" xPosition="-137.0" yPosition="733.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="publıc">
+          <Argument type="int" name="depth"/>
+          <Argument type="int" name="height"/>
+          <Argument type="int" name="width"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getArea" returnType="double" visibility="publıc"/>
+        <Method name="getVolume" returnType="double" visibility="publıc"/>
+        <Method name="toString" returnType="String" visibility="publıc"/>
+      </Methods>
+    </Class>
+    <Class name="Rectangle" package="javaapplication39" visibility="publıc" xPosition="549.0" yPosition="266.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="publıc">
+          <Argument type="double" name="height"/>
+          <Argument type="double" name="width"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getArea" returnType="double" visibility="publıc"/>
+        <Method name="toString" returnType="String" visibility="publıc"/>
+      </Methods>
+    </Class>
+    <Class name="Shape2D" package="javaapplication39" visibility="publıc" isAbstract="true" xPosition="219.0" yPosition="-36.0">
+      <Fields>
+        <Field name="PI" type="double" visibility="package" isStatic="true" isFinal="true"/>
+        <Field name="height" type="double" visibility="package"/>
+        <Field name="width" type="double" visibility="package"/>
+        <Field name="radius" type="double" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="publıc">
+          <Argument type="double" name="height"/>
+          <Argument type="double" name="width"/>
+        </Constructor>
+        <Constructor visibility="publıc">
+          <Argument type="double" name="radius"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getArea" returnType="double" visibility="publıc" isAbstract="true"/>
+        <Method name="toString" returnType="String" visibility="publıc" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="Shape3D" package="javaapplication39" visibility="publıc" isAbstract="true" xPosition="180.0" yPosition="448.0">
+      <Fields>
+        <Field name="depth" type="double" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="publıc">
+          <Argument type="double" name="height"/>
+          <Argument type="double" name="width"/>
+          <Argument type="double" name="depth"/>
+        </Constructor>
+        <Constructor visibility="publıc">
+          <Argument type="double" name="height"/>
+          <Argument type="double" name="radius"/>
+        </Constructor>
+        <Constructor visibility="publıc">
+          <Argument type="double" name="radius"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getVolume" returnType="double" visibility="publıc" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="Sphere" package="javaapplication39" visibility="publıc" xPosition="406.0" yPosition="733.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="publıc">
+          <Argument type="double" name="radius"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getVolume" returnType="double" visibility="publıc"/>
+        <Method name="getArea" returnType="double" visibility="publıc"/>
+        <Method name="toString" returnType="String" visibility="publıc"/>
+      </Methods>
+    </Class>
+    <Class name="Square" package="javaapplication39" visibility="publıc" xPosition="-21.0" yPosition="266.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="publıc">
+          <Argument type="double" name="width"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getArea" returnType="double" visibility="publıc"/>
+        <Method name="toString" returnType="String" visibility="publıc"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="javaapplication39.Sphere" target="javaapplication39.Shape3D"/>
+    <IsRelation name="is" source="javaapplication39.Square" target="javaapplication39.Shape2D"/>
+    <IsRelation name="is" source="javaapplication39.Circle" target="javaapplication39.Shape2D"/>
+    <IsRelation name="is" source="javaapplication39.Rectangle" target="javaapplication39.Shape2D"/>
+    <IsRelation name="is" source="javaapplication39.Cone" target="javaapplication39.Shape3D"/>
+    <IsRelation name="is" source="javaapplication39.Shape3D" target="javaapplication39.Shape2D"/>
+    <IsRelation name="is" source="javaapplication39.Pyramid" target="javaapplication39.Shape3D"/>
+    <IsRelation name="is" source="javaapplication39.Cylinder" target="javaapplication39.Shape3D"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

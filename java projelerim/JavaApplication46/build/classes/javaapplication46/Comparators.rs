@@ -1,0 +1,3 @@
+javaapplication46.SalaryComparator
+javaapplication46.NameComparator
+javaapplication46.IDComparator

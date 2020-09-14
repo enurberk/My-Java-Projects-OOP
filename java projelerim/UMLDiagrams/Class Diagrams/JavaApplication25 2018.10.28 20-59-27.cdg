@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="JavaApplication25">
+  <ClassDiagramComponents>
+    <Class name="Account" package="javaapplication25" visibility="publıc" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="accountNumber" type="int" visibility="prıvate"/>
+        <Field name="balance" type="double" visibility="prıvate"/>
+        <Field name="amount" type="double" visibility="package" isStatic="true"/>
+        <Field name="scanner" type="Scanner" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="package">
+          <Argument type="int" name="accountNumber"/>
+          <Argument type="double" name="balance"/>
+        </Constructor>
+        <Constructor visibility="package">
+          <Argument type="int" name="accountNumber"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getAccountNumber" returnType="int" visibility="publıc"/>
+        <Method name="getBalance" returnType="double" visibility="publıc"/>
+        <Method name="setBalance" returnType="void" visibility="publıc">
+          <Argument type="double" name="balance"/>
+        </Method>
+        <Method name="deposit" returnType="void" visibility="publıc">
+          <Argument type="double" name="amount"/>
+        </Method>
+        <Method name="withdraw" returnType="void" visibility="publıc">
+          <Argument type="double" name="amount"/>
+        </Method>
+        <Method name="chooseWhichAccountForWithdraw" returnType="void" visibility="publıc"/>
+        <Method name="toString" returnType="String" visibility="publıc"/>
+      </Methods>
+    </Class>
+    <Class name="JavaApplication25" package="javaapplication25" visibility="publıc" xPosition="320.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="publıc" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="JavaApplication28">
+  <ClassDiagramComponents>
+    <Class name="Circle" package="javaapplication28" visibility="publıc" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="default_radius" type="double" visibility="prıvate" isStatic="true" isFinal="true"/>
+        <Field name="default_color" type="String" visibility="prıvate" isStatic="true" isFinal="true"/>
+        <Field name="radius" type="double" visibility="prıvate"/>
+        <Field name="color" type="String" visibility="prıvate"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="publıc">
+          <Argument type="double" name="radius"/>
+          <Argument type="String" name="color"/>
+        </Constructor>
+        <Constructor visibility="publıc">
+          <Argument type="double" name="radius"/>
+        </Constructor>
+        <Constructor visibility="publıc"/>
+      </Constructors>
+      <Methods>
+        <Method name="getRadius" returnType="double" visibility="package"/>
+        <Method name="setRadius" returnType="void" visibility="package">
+          <Argument type="double" name="radius1"/>
+        </Method>
+        <Method name="getColor" returnType="String" visibility="package"/>
+        <Method name="setColor" returnType="void" visibility="package">
+          <Argument type="String" name="color1"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="publıc"/>
+        <Method name="getArea" returnType="double" visibility="package"/>
+      </Methods>
+    </Class>
+    <Class name="Cylinder" package="javaapplication28" visibility="publıc" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="height" type="double" visibility="prıvate"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="package">
+          <Argument type="double" name="radius"/>
+          <Argument type="String" name="color"/>
+          <Argument type="double" name="height"/>
+        </Constructor>
+        <Constructor visibility="package">
+          <Argument type="double" name="radius"/>
+          <Argument type="double" name="height"/>
+        </Constructor>
+        <Constructor visibility="package">
+          <Argument type="double" name="radius"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getHeight" returnType="double" visibility="package"/>
+        <Method name="setHeight" returnType="void" visibility="package">
+          <Argument type="double" name="height"/>
+        </Method>
+        <Method name="getVolume" returnType="double" visibility="package"/>
+      </Methods>
+    </Class>
+    <Class name="JavaApplication28" package="javaapplication28" visibility="publıc" xPosition="620.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="publıc" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="javaapplication28.Cylinder" target="javaapplication28.Circle"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
